@@ -49,7 +49,7 @@ The parsing section of the program ensures that the input map is valid and playa
 6. **Path validation (Flood Fill)**
    - `ft_possible_map` uses a flood-fill algorithm (`ft_flood_fill`) to ensure that all collectibles and the exit are reachable from the player’s starting position.
 
-- **MLX Handle**
+### **MLX Handle**
 
 This section of the program demonstrates the use of the MinilibX (MLX) library to create and manage the game’s graphical interface.
 
@@ -64,22 +64,22 @@ The functions implemented handle:
 
 These functions help to create a 2D game, including image management, user interaction. They provide a practical understanding of graphics handling and event-driven programming in a game context.
 
- - **Error management**
+ ### **Error management**
 
 The program implements comprehensive error handling, covering all possible failure cases and ensuring proper cleanup and descriptive feedback for the user.
 The functions that handle these errors are implemented in the files `errors_1.c` and `errors_2.c`.
 
- - **Memory**
+ ### **Memory**
 
 All dynamically allocated memory in the project is carefully managed to prevent leaks. Maps, game structures, and images created with MinilibX are properly freed using dedicated cleanup functions.
 
 At every stage of the program—during map parsing, game execution, or on errors—resources are released correctly. This ensures that when the program exits, whether normally or due to an error, no memory leaks remain, maintaining stability and reliability. The cleanup functions are implemented in the files `free_game.c` and `free_map.c`.
 
- - **Main** 
+ ### **Main** 
 
 The `main` function initializes the map and game structures, sets up the MLX window and textures, installs event hooks, and starts the game loop, ensuring proper resource management throughout.
 
-## Resources
+### Resources
 
  - **Peer-to-peer learning** – was the most valuable resource; this project was developed with guidance and collaboration from other 42 students;
  - **Books** – Classic references to learn C from scratch and understand various programming notions;
